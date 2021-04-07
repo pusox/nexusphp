@@ -3487,7 +3487,12 @@ function validusername($username)
 {
 	if ($username == "")
 	return false;
-
+	$c = '/^[\x{4e00}-\x{9fa5}A-Za-z0-9_]+$/u';
+	if (preg_match ($c, $username)) { 
+		return true; 
+	}
+	return false;
+	/*
 	// The following characters are allowed in user names
 	$allowedchars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
@@ -3496,6 +3501,7 @@ function validusername($username)
 	return false;
 
 	return true;
+	*/
 }
 
 //Code for Viewing NFO file
