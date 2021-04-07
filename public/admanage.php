@@ -340,13 +340,13 @@ elseif ($action == 'submit')
 				break;
 		}
 		if ($_POST['isedit']){
-			sql_query("UPDATE advertisements SET enabled=".sqlesc($enabled).", type=".sqlesc($type).", displayorder=".sqlesc($displayorder).", name=".sqlesc($name).", parameters=".sqlesc($parameters).", code=".sqlesc($code).", starttime=".($starttime ? sqlesc($starttime) : "NULL").", endtime=".($endtime ? sqlesc($endtime) : "NULL")." WHERE id=".sqlesc($id)) or sqlerr(__FILE__, __LINE__);
+			sql_query("UPDATE advertisements SET enabled=".sqlesc($enabled).", type=".sqlesc($type).", displayorder=".sqlesc($displayorder).", name=".sqlesc($name).", parameters=".sqlesc($parameters).", code=".sqlesc($code).", starttime=".($starttime ? sqlesc($starttime) : sqlesc("1970-01-01 00:00:00")).", endtime=".($endtime ? sqlesc($endtime) : sqlesc("2070-01-01 00:00:00"))." WHERE id=".sqlesc($id)) or sqlerr(__FILE__, __LINE__);
 			$Cache->delete_value('current_ad_array', false);
 			stderr($lang_admanage['std_success'], $lang_admanage['std_edit_success']."<a href=\"?\"><b>".$lang_admanage['std_go_back']."</b></a>", false);
 		}
 		else
 		{
-			sql_query("INSERT INTO advertisements (`enabled`, `type`, `position`, `displayorder`, `name`, `parameters`, `code`, `starttime`, `endtime`) VALUES (".sqlesc($enabled).", ".sqlesc($type).", ".sqlesc($position).", ".sqlesc($displayorder).", ".sqlesc($name).", ".sqlesc($parameters).", ".sqlesc($code).", ".($starttime ? sqlesc($starttime) : "1970-01-01 00:00:00").", ".($endtime ? sqlesc($endtime) : "2070-01-01 00:00:00").")") or sqlerr(__FILE__, __LINE__);
+			sql_query("INSERT INTO advertisements (`enabled`, `type`, `position`, `displayorder`, `name`, `parameters`, `code`, `starttime`, `endtime`) VALUES (".sqlesc($enabled).", ".sqlesc($type).", ".sqlesc($position).", ".sqlesc($displayorder).", ".sqlesc($name).", ".sqlesc($parameters).", ".sqlesc($code).", ".($starttime ? sqlesc($starttime) : sqlesc("1970-01-01 00:00:00")).", ".($endtime ? sqlesc($endtime) : sqlesc("2070-01-01 00:00:00")).")") or sqlerr(__FILE__, __LINE__);
 			$Cache->delete_value('current_ad_array', false);
 			stderr($lang_admanage['std_success'], $lang_admanage['std_add_success']."<a href=\"?\"><b>".$lang_admanage['std_go_back']."</b></a>", false);
 		}
