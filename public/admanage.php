@@ -346,7 +346,7 @@ elseif ($action == 'submit')
 		}
 		else
 		{
-			sql_query("INSERT INTO advertisements (`enabled`, `type`, `position`, `displayorder`, `name`, `parameters`, `code`, `starttime`, `endtime`) VALUES (".sqlesc($enabled).", ".sqlesc($type).", ".sqlesc($position).", ".sqlesc($displayorder).", ".sqlesc($name).", ".sqlesc($parameters).", ".sqlesc($code).", ".($starttime ? sqlesc($starttime) : "NULL").", ".($endtime ? sqlesc($endtime) : "NULL").")") or sqlerr(__FILE__, __LINE__);
+			sql_query("INSERT INTO advertisements (`enabled`, `type`, `position`, `displayorder`, `name`, `parameters`, `code`, `starttime`, `endtime`) VALUES (".sqlesc($enabled).", ".sqlesc($type).", ".sqlesc($position).", ".sqlesc($displayorder).", ".sqlesc($name).", ".sqlesc($parameters).", ".sqlesc($code).", ".($starttime ? sqlesc($starttime) : "1970-01-01 00:00:00").", ".($endtime ? sqlesc($endtime) : "2070-01-01 00:00:00").")") or sqlerr(__FILE__, __LINE__);
 			$Cache->delete_value('current_ad_array', false);
 			stderr($lang_admanage['std_success'], $lang_admanage['std_add_success']."<a href=\"?\"><b>".$lang_admanage['std_go_back']."</b></a>", false);
 		}
