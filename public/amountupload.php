@@ -32,80 +32,86 @@ if (isset($_GET["sent"]) && $_GET["sent"] == 1) {
 <td class="rowhead" valign="top">Add to</td><td class="rowfollow">
   <table style="border: 0" width="100%" cellpadding="0" cellspacing="0">
     <tr>
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="0">
-             </td>
-             <td style="border: 0">Peasant</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_PEASANT ?>">
+      </td>
+      <td style="border: 0">Peasant</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="1">
-             </td>
-             <td style="border: 0">User</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_USER ?>">
+      </td>
+      <td style="border: 0">User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="2">
-             </td>
-             <td style="border: 0">Power User</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_POWER_USER ?>">
+      </td>
+      <td style="border: 0">Power User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="3">
-             </td>
-             <td style="border: 0">Elite User</td>
-      </tr>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_ELITE_USER ?>">
+      </td>
+      <td style="border: 0">Elite User</td>
+    </tr>
     <tr>
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="4">
-             </td>
-             <td style="border: 0">Crazy User</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_CRAZY_USER ?>">
+      </td>
+      <td style="border: 0">Crazy User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="5">
-             </td>
-             <td style="border: 0">Insane User</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_INSANE_USER ?>">
+      </td>
+      <td style="border: 0">Insane User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="6">
-             </td>
-             <td style="border: 0">Veteran User</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_VETERAN_USER ?>">
+      </td>
+      <td style="border: 0">Veteran User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="7">
-             </td>
-             <td style="border: 0">Extreme User</td>
-      </tr>
-
-    <tr>
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="8">
-             </td>
-             <td style="border: 0">Ultimate User</td>
-
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="9">
-             </td>
-             <td style="border: 0">Nexus Master</td>
-
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="10">
-             </td>
-             <td style="border: 0">VIP</td>
-
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="11">
-             </td>
-             <td style="border: 0">Uploader</td>
-      </tr>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_EXTREME_USER ?>">
+      </td>
+      <td style="border: 0">Extreme User</td>
+    </tr>
 
     <tr>
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="12">
-             </td>
-             <td style="border: 0">Moderator</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_ULTIMATE_USER ?>">
+      </td>
+      <td style="border: 0">Ultimate User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="13">
-             </td>
-             <td style="border: 0">Administrator</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_NEXUS_MASTER ?>">
+      </td>
+      <td style="border: 0">Nexus Master</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="14">
-             </td>
-             <td style="border: 0">SysOp</td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_VIP ?>">
+      </td>
+      <td style="border: 0">VIP</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="15">
-             </td>
-             <td style="border: 0">Staff Leader</td>
-	
-       <td style="border: 0">&nbsp;</td>
-       <td style="border: 0">&nbsp;</td>
-      </tr>
-    </table>
-  </td>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_UPLOADER ?>">
+      </td>
+      <td style="border: 0">Uploader</td>
+    </tr>
+
+    <tr>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_MODERATOR ?>">
+      </td>
+      <td style="border: 0">Moderator</td>
+
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_ADMINISTRATOR ?>">
+      </td>
+      <td style="border: 0">Administrator</td>
+
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_SYSOP ?>">
+      </td>
+      <td style="border: 0">SysOp</td>
+
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_STAFFLEADER ?>">
+      </td>
+      <td style="border: 0">Staff Leader</td>
+    </tr>
+
+    <tr>
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_RETIREE ?>">
+      </td>
+      <td style="border: 0">Retire</td>
+
+      <td style="border: 0">&nbsp;</td>
+      <td style="border: 0">&nbsp;</td>
+    </tr>
+  </table>
+</td>
 </tr>
 <tr><td class="rowhead" valign="top">Subject </td><td class="rowfollow"><input type=text name=subject size=82></td></tr>
 <tr><td class="rowhead" valign="top">Reason </td><td class="rowfollow"><textarea name=msg cols=80 rows=5><?php echo $body ?? ''?></textarea></td></tr>
