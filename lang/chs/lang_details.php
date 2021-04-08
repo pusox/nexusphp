@@ -219,6 +219,8 @@ $lang_details = array
 	'row_uploader_bandwidth' => "发布者带宽",
 	'text_and_more' => "……（这里只显示最新记录。共",
 	'text_users_in_total' => "个用户表示了感谢）",
+	'download_link' => "下载链接",
+	'row_download' => "下载",
 );
 
 ?>

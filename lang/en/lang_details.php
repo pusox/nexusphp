@@ -218,6 +218,8 @@ $lang_details = array
 	'row_uploader_bandwidth' => "Uploader<br />Bandwidth",
 	'text_and_more' => " and more (thanks from ",
 	'text_users_in_total' => " users in total)",
+	'download_link' => "Download Link",
+	'row_download' => "Download",
 );
 
 ?>
