@@ -2494,9 +2494,12 @@ else {
 <tr><td id="outer" align="center" class="outer" style="padding-top: 20px; padding-bottom: 20px">
 <?php
 	if ($Advertisement->enable_ad()){
-			$belownavad=$Advertisement->get_ad('belownav');
-			if ($belownavad)
-			echo "<div align=\"center\" style=\"margin-bottom: 10px\" id=\"ad_belownav\">".$belownavad[0]."</div>";
+			$belownavads=$Advertisement->get_ad('belownav');
+			if (count($belownavads) > 0) {
+				foreach ($belownavads as $ad) {
+					echo "<div align=\"center\" style=\"margin-bottom: 10px\" id=\"ad_belownav\">".$ad ."</div>";
+				}
+			}
 	}
 if ($msgalert)
 {
