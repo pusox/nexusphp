@@ -26,7 +26,7 @@ failedloginscheck ("Signup");
 if ($iv == "yes")
 	check_code ($_POST['imagehash'], $_POST['imagestring']);
 }
-
+/*
 function isportopen($port)
 {
 	$sd = @fsockopen($_SERVER["REMOTE_ADDR"], $port, $errno, $errstr, 1);
@@ -46,6 +46,7 @@ function isproxy()
 		if (isportopen($ports[$i])) return true;
 	return false;
 }
+*/
 if ($type=='invite')
 {
 $inviter =  $_POST["inviter"];
