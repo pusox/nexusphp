@@ -1423,7 +1423,7 @@ function sent_mail($to,$fromname,$fromemail,$subject,$body,$type = "confirmation
 
         $setting = get_setting('smtp');
         // Create the Transport
-        $transport = (new Swift_SmtpTransport($setting['smtpaddress'], $setting['smtpport'], $setting['smtpport'] == 465 ? 'ssl' : null))
+        $transport = (new Swift_SmtpTransport($setting['smtpaddress'], $setting['smtpport'], $setting['smtpport'] == 465 ? 'ssl' : $setting['smtpport'] == 587 ? 'tls' : null))
             ->setUsername($setting['accountname'])
             ->setPassword($setting['accountpassword'])
         ;
