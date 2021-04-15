@@ -1309,9 +1309,6 @@ function cache_save  ($file = 'cachefile') {
 
 function get_email_encode($lang)
 {
-	if($lang == 'chs' || $lang == 'cht')
-	return "gbk";
-	else
 	return "utf-8";
 }
 
