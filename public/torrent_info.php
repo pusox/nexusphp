@@ -72,7 +72,7 @@ if (!$id)
 $res = sql_query("SELECT name FROM torrents WHERE id = ".sqlesc($id)) or sqlerr(__FILE__, __LINE__);
 $row = mysql_fetch_assoc($res);
 
-$fn = "$torrent_dir/$id.torrent";
+$fn = "ROOT_PATH . $torrent_dir/$id.torrent";
 
 if (!$row || !is_file($fn) || !is_readable($fn))
 	httperr();
