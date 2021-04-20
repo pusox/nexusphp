@@ -72,7 +72,7 @@ class DB
             return $this->driver->query($sql);
         } catch (\Exception $e) {
             do_log(sprintf("%s [%s] %s", $e->getMessage(), $sql, $e->getTraceAsString()));
-            throw new DatabaseException($e->getMessage(), $sql);
+            return false;
         }
 
     }
