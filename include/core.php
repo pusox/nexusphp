@@ -22,7 +22,7 @@ require $rootpath . 'vendor/autoload.php';
 require $rootpath . 'nexus/Database/helpers.php';
 require $rootpath . 'classes/class_cache_redis.php';
 require $rootpath . 'include/config.php';
-if (!in_array(CURRENT_SCRIPT, ['announce', 'scrape'])) {
+if (!in_array(CURRENT_SCRIPT, ['announce', 'scrape', 'download', 'torrentrss'])) {
     require $rootpath . get_langfile_path("functions.php");
     checkGuestVisit();
 }
