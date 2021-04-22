@@ -1972,7 +1972,7 @@ CREATE TABLE `stylesheets` (
 
 LOCK TABLES `stylesheets` WRITE;
 /*!40000 ALTER TABLE `stylesheets` DISABLE KEYS */;
-INSERT INTO `stylesheets` VALUES (2,'styles/BlueGene/','Blue Gene','','Zantetsu','HDBits clone'),(3,'styles/BlasphemyOrange/','Blasphemy Orange','','Zantetsu','Bit-HDTV clone'),(4,'styles/Classic/','Classic','','Zantetsu','TBSource original mod'),(6,'styles/DarkPassion/','Dark Passion','','Zantetsu',''),(7,'styles/BambooGreen/','Bamboo Green','','Xia Zuojie','Baidu Hi clone');
+INSERT INTO `stylesheets` VALUES (2,'styles/BlueGene/','Blue Gene','','Zantetsu','HDBits clone'),(3,'styles/BlasphemyOrange/','Blasphemy Orange','','Zantetsu','Bit-HDTV clone'),(4,'styles/Classic/','Classic','','Zantetsu','TBSource original mod'),(6,'styles/DarkPassion/','Dark Passion','','Zantetsu',''),(7,'styles/BambooGreen/','Bamboo Green','','Xia Zuojie','Baidu Hi clone'),(8,'styles/Pink/','Pink','','栗山未来','没有未来的未来不是我想要的未来');
 /*!40000 ALTER TABLE `stylesheets` ENABLE KEYS */;
 UNLOCK TABLES;
 
