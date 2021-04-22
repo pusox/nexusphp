@@ -3,8 +3,8 @@
 /.idea
 /.vagrant
 /.settings
-/attachments
-/bitbucket
+attachments
+bitbucket
 /subs
 /public/install
 /public/update
