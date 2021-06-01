@@ -4,7 +4,7 @@ body
 	margin-bottom: 0px;
 	color: #000000;
 	font-family: tahoma, arial, helvetica, sans-serif;
-	background: url("https://pic.guotang.top/GAIICJISHV.png") center top / cover no-repeat fixed;
+	background: #f58f982f;
 }
 body.inframe
 {
@@ -460,6 +460,11 @@ input[type="button"]:hover {
 	background-color: #f58f98af;
 }
 
+input[type="password"] {
+	border: 2px solid #f58f989f;
+	background-color: #f58f983f;
+}
+
 input[type="reset"] {
 	border: 2px solid #f58f989f;
 	background-color: #f58f983f;
@@ -513,8 +518,8 @@ img.border
 }
 .dropmenu
 {
-	background:#F2F9FD none repeat scroll 0 0;
-	border:3px solid #A6C9D7;
+	background:#f58f989f none repeat scroll 0 0;
+	border:3px solid #f58f983f;
 	margin-top:3px;
 	opacity:0.9;
 	position:absolute;
