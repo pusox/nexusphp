@@ -32,78 +32,78 @@ if (isset($_GET["sent"]) && $_GET["sent"] == 1) {
 <td class="rowhead" valign="top">Add to</td><td class="rowfollow">
   <table style="border: 0" width="100%" cellpadding="0" cellspacing="0">
     <tr>
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_PEASANT ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_PEASANT ?>">
       </td>
       <td style="border: 0">Peasant</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_USER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_USER ?>">
       </td>
       <td style="border: 0">User</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_POWER_USER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_POWER_USER ?>">
       </td>
       <td style="border: 0">Power User</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_ELITE_USER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_ELITE_USER ?>">
       </td>
       <td style="border: 0">Elite User</td>
     </tr>
     <tr>
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_CRAZY_USER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_CRAZY_USER ?>">
       </td>
       <td style="border: 0">Crazy User</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_INSANE_USER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_INSANE_USER ?>">
       </td>
       <td style="border: 0">Insane User</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_VETERAN_USER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_VETERAN_USER ?>">
       </td>
       <td style="border: 0">Veteran User</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_EXTREME_USER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_EXTREME_USER ?>">
       </td>
       <td style="border: 0">Extreme User</td>
     </tr>
 
     <tr>
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_ULTIMATE_USER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_ULTIMATE_USER ?>">
       </td>
       <td style="border: 0">Ultimate User</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_NEXUS_MASTER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_NEXUS_MASTER ?>">
       </td>
       <td style="border: 0">Nexus Master</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_VIP ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_VIP ?>">
       </td>
       <td style="border: 0">VIP</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_UPLOADER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_UPLOADER ?>">
       </td>
       <td style="border: 0">Uploader</td>
     </tr>
 
     <tr>
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_MODERATOR ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_MODERATOR ?>">
       </td>
       <td style="border: 0">Moderator</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_ADMINISTRATOR ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_ADMINISTRATOR ?>">
       </td>
       <td style="border: 0">Administrator</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_SYSOP ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_SYSOP ?>">
       </td>
       <td style="border: 0">SysOp</td>
 
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_STAFFLEADER ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_STAFFLEADER ?>">
       </td>
       <td style="border: 0">Staff Leader</td>
     </tr>
 
     <tr>
-      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php UC_RETIREE ?>">
+      <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_RETIREE ?>">
       </td>
       <td style="border: 0">Retire</td>
 
@@ -114,7 +114,7 @@ if (isset($_GET["sent"]) && $_GET["sent"] == 1) {
 </td>
 </tr>
 <tr><td class="rowhead" valign="top">Subject </td><td class="rowfollow"><input type=text name=subject size=82></td></tr>
-<tr><td class="rowhead" valign="top">Reason </td><td class="rowfollow"><textarea name=msg cols=80 rows=5><?php echo $body ?? ''?></textarea></td></tr>
+<tr><td class="rowhead" valign="top">Reason </td><td class="rowfollow"><textarea name=msg cols=80 rows=5><?php echo $body ?? '' ?></textarea></td></tr>
 <tr>
 <td class="rowfollow" colspan=2><div align="center"><b>Operator:&nbsp;&nbsp;</b>
 <?php echo $CURUSER['username']?>
