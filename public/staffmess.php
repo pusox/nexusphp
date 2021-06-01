@@ -28,80 +28,86 @@ if ($_GET["sent"] == 1) {
 }
 ?>
 <tr>
-<td><b>Send to:</b><br />
-  <table style="border: 0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="0">
-             </td>
-             <td style="border: 0">Peasant</td>
+  <td><b>Send to:</b><br />
+    <table style="border: 0" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_PEASANT ?>">
+        </td>
+        <td style="border: 0">Peasant</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="1">
-             </td>
-             <td style="border: 0">User</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_USER ?>">
+        </td>
+        <td style="border: 0">User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="2">
-             </td>
-             <td style="border: 0">Power User</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_POWER_USER ?>">
+        </td>
+        <td style="border: 0">Power User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="3">
-             </td>
-             <td style="border: 0">Elite User</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_ELITE_USER ?>">
+        </td>
+        <td style="border: 0">Elite User</td>
       </tr>
-    <tr>
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="4">
-             </td>
-             <td style="border: 0">Crazy User</td>
+      <tr>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_CRAZY_USER ?>">
+        </td>
+        <td style="border: 0">Crazy User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="5">
-             </td>
-             <td style="border: 0">Insane User</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_INSANE_USER ?>">
+        </td>
+        <td style="border: 0">Insane User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="6">
-             </td>
-             <td style="border: 0">Veteran User</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_VETERAN_USER ?>">
+        </td>
+        <td style="border: 0">Veteran User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="7">
-             </td>
-             <td style="border: 0">Extreme User</td>
-      </tr>
-
-    <tr>
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="8">
-             </td>
-             <td style="border: 0">Ultimate User</td>
-
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="9">
-             </td>
-             <td style="border: 0">Nexus Master</td>
-
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="10">
-             </td>
-             <td style="border: 0">VIP</td>
-
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="11">
-             </td>
-             <td style="border: 0">Uploader</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_EXTREME_USER ?>">
+        </td>
+        <td style="border: 0">Extreme User</td>
       </tr>
 
-    <tr>
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="12">
-             </td>
-             <td style="border: 0">Moderator</td>
+      <tr>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_ULTIMATE_USER ?>">
+        </td>
+        <td style="border: 0">Ultimate User</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="13">
-             </td>
-             <td style="border: 0">Administrator</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_NEXUS_MASTER ?>">
+        </td>
+        <td style="border: 0">Nexus Master</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="14">
-             </td>
-             <td style="border: 0">SysOp</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_VIP ?>">
+        </td>
+        <td style="border: 0">VIP</td>
 
-             <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="15">
-             </td>
-             <td style="border: 0">Staff Leader</td>
-	
-       <td style="border: 0">&nbsp;</td>
-       <td style="border: 0">&nbsp;</td>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_UPLOADER ?>">
+        </td>
+        <td style="border: 0">Uploader</td>
+      </tr>
+
+      <tr>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_MODERATOR ?>">
+        </td>
+        <td style="border: 0">Moderator</td>
+
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_ADMINISTRATOR ?>">
+        </td>
+        <td style="border: 0">Administrator</td>
+
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_SYSOP ?>">
+        </td>
+        <td style="border: 0">SysOp</td>
+
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_STAFFLEADER ?>">
+        </td>
+        <td style="border: 0">Staff Leader</td>
+      </tr>
+
+      <tr>
+        <td style="border: 0" width="20"><input type="checkbox" name="clases[]" value="<?php echo UC_RETIREE ?>">
+        </td>
+        <td style="border: 0">Retire</td>
+
+        <td style="border: 0">&nbsp;</td>
+        <td style="border: 0">&nbsp;</td>
       </tr>
     </table>
   </td>
